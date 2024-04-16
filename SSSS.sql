@@ -211,10 +211,10 @@ INSERT INTO MOBILE VALUES(12, 'Nokia', 'G50', 'Android', 6.82, '720x1640 pixels'
 INSERT INTO MOBILE VALUES(13, 'Asus', 'Zenfone 8', 'Android', 5.9, '1080x2400 pixels', 4000, TRUE, 'Qualcomm Snapdragon 888', 8, 256.00, 'Obsidian Black', FALSE, '2024-04-13', 799);
 INSERT INTO MOBILE VALUES(14, 'Lenovo', 'Legion Phone Duel 2', 'Android', 6.92, '1080x2460 pixels', 5500, TRUE, 'Qualcomm Snapdragon 8 Gen 1', 12, 512.00, 'Titanium White', TRUE, '2024-04-14', 1099);
 INSERT INTO MOBILE VALUES(15, 'BlackBerry', 'Key2', 'Android', 4.5, '1080x1620 pixels', 3500, FALSE, 'Qualcomm Snapdragon 660', 6, 64.00, 'Silver', FALSE, '2024-04-15', 599);
-SELECT * FROM MOBILE
+SELECT * FROM MOBILE;
 
-CREATE TABLE INSTAGRAMS (
-    ID SERIAL PRIMARY KEY,
+CREATE TABLE INSTA (
+    ID INT,
     username VARCHAR(50),
     full_name VARCHAR(100),
     bio TEXT,
@@ -232,21 +232,23 @@ CREATE TABLE INSTAGRAMS (
 );
 SHOW TABLES;
 
-INSERT INTO INSTAGRAMS VALUES ('user1', 'John Doe', 'Hello world!', 1000, 500, 50, TRUE, FALSE, '2023-01-01', '2024-04-14 08:00:00', 3.25, 50, 10, 'profile_pic1.jpg');
-INSERT INTO INSTAGRAMS VALUES ('user2', 'Jane Smith', 'Travel enthusiast', 2000, 1000, 100, TRUE, FALSE, '2022-12-15', '2024-04-13 12:00:00', 4.75, 80, 20, 'profile_pic2.jpg');
-INSERT INTO INSTAGRAMS VALUES ('user3', 'Alice Johnson', 'Food lover 🍔', 500, 300, 30, FALSE, FALSE, '2023-02-20', '2024-04-12 16:00:00', 2.80, 40, 15, 'profile_pic3.jpg');
-INSERT INTO INSTAGRAMS VALUES ('user4', 'Bob Williams', 'Fitness freak 💪', 1500, 700, 75, TRUE, TRUE, '2023-03-10', '2024-04-11 20:00:00', 5.50, 100, 25, 'profile_pic4.jpg');
-INSERT INTO INSTAGRAMS VALUES ('user5', 'Emily Brown', 'Nature lover 🌿', 3000, 2000, 200, TRUE, FALSE, '2023-04-05', '2024-04-10 10:00:00', 6.75, 120, 30, 'profile_pic5.jpg');
-INSERT INTO INSTAGRAMS VALUES ('user6', 'Michael Wilson', 'Tech geek 📱', 800, 400, 40, FALSE, FALSE, '2023-05-20', '2024-04-09 14:00:00', 3.90, 60, 18, 'profile_pic6.jpg');
-INSERT INTO INSTAGRAMS VALUES ('user7', 'Emma Taylor', 'Fashionista 👗', 2500, 1500, 150, TRUE, FALSE, '2023-06-15', '2024-04-08 18:00:00', 7.25, 140, 35, 'profile_pic7.jpg');
-INSERT INTO INSTAGRAMS VALUES ('user8', 'Daniel Martinez', 'Gamer 🎮', 1200, 600, 60, TRUE, TRUE, '2023-07-10', '2024-04-07 22:00:00', 4.00, 70, 20, 'profile_pic8.jpg');
-INSERT INTO INSTAGRAMS VALUES ('user10', 'David Thomas', 'Bookworm 📚', 4000, 3000, 300, TRUE, FALSE, '2023-09-20', '2024-04-05 16:00:00', 8.00, 160, 40, 'profile_pic10.jpg');
-INSERT INTO INSTAGRAMS VALUES ('user11', 'Sophia Hall', 'Artist 🎨', 600, 300, 30, FALSE, FALSE, '2023-10-15', '2024-04-04 08:00:00', 3.20, 45, 12, 'profile_pic11.jpg');
-INSERT INTO INSTAGRAMS VALUES ('user12', 'James Garcia', 'Music lover 🎵', 3500, 2000, 200, TRUE, FALSE, '2023-11-10', '2024-04-03 12:00:00', 6.50, 130, 35, 'profile_pic12.jpg');
-INSERT INTO INSTAGRAMS VALUES ('user13', 'Ava Martinez', 'Coffee addict ☕', 900, 500, 50, FALSE, TRUE, '2024-01-05', '2024-04-02 16:00:00', 4.25, 75, 20, 'profile_pic13.jpg');
-INSERT INTO INSTAGRAMS VALUES ('user14', 'Ethan Adams', 'Adventure seeker 🌍', 2200, 1500, 150, TRUE, FALSE, '2024-02-20', '2024-04-01 20:00:00', 7.00, 150, 30, 'profile_pic14.jpg');
-INSERT INTO INSTAGRAMS VALUES ('user15', 'Mia Brown', 'Yoga enthusiast 🧘‍♀️', 1000, 600, 60, TRUE, FALSE, '2024-03-15', '2024-03-31 10:00:00', 4.50, 80, 25, 'profile_pic15.jpg');
-SELECT * FROM INSTAGRAMS
+INSERT INTO INSTA VALUES (1,'user1', 'John Doe', 'Hello world!', 1000, 500, 50, TRUE, FALSE, '2023-01-01', '2024-04-14 08:00:00', 3.25, 50, 10, 'profile_pic1.jpg');
+INSERT INTO INSTA VALUES (2,'user2', 'Jane Smith', 'Travel enthusiast', 2000, 1000, 100, TRUE, FALSE, '2022-12-15', '2024-04-13 12:00:00', 4.75, 80, 20, 'profile_pic2.jpg');
+INSERT INTO INSTA VALUES (3,'user3', 'Alice Johnson', 'Food lover 🍔', 500, 300, 30, FALSE, FALSE, '2023-02-20', '2024-04-12 16:00:00', 2.80, 40, 15, 'profile_pic3.jpg');
+INSERT INTO INSTA VALUES (4,'user4', 'Bob Williams', 'Fitness freak 💪', 1500, 700, 75, TRUE, TRUE, '2023-03-10', '2024-04-11 20:00:00', 5.50, 100, 25, 'profile_pic4.jpg');
+INSERT INTO INSTA VALUES (5,'user5', 'Emily Brown', 'Nature lover 🌿', 3000, 2000, 200, TRUE, FALSE, '2023-04-05', '2024-04-10 10:00:00', 6.75, 120, 30, 'profile_pic5.jpg');
+INSERT INTO INSTA VALUES (6,'user6', 'Michael Wilson', 'Tech geek 📱', 800, 400, 40, FALSE, FALSE, '2023-05-20', '2024-04-09 14:00:00', 3.90, 60, 18, 'profile_pic6.jpg');
+INSERT INTO INSTA VALUES (7,'user7', 'Emma Taylor', 'Fashionista 👗', 2500, 1500, 150, TRUE, FALSE, '2023-06-15', '2024-04-08 18:00:00', 7.25, 140, 35, 'profile_pic7.jpg');
+INSERT INTO INSTA VALUES (8,'user8', 'Daniel Martinez', 'Gamer 🎮', 1200, 600, 60, TRUE, TRUE, '2023-07-10', '2024-04-07 22:00:00', 4.00, 70, 20, 'profile_pic8.jpg');
+INSERT INTO INSTA VALUES (9,'user9', 'David Thomas', 'Bookworm 📚', 4000, 3000, 300, TRUE, FALSE, '2023-09-20', '2024-04-05 16:00:00', 8.00, 160, 40, 'profile_pic10.jpg');
+INSERT INTO INSTA VALUES (10,'user10', 'Sophia Hall', 'Artist 🎨', 600, 300, 30, FALSE, FALSE, '2023-10-15', '2024-04-04 08:00:00', 3.20, 45, 12, 'profile_pic11.jpg');
+INSERT INTO INSTA VALUES (11,'user11', 'James Garcia', 'Music lover 🎵', 3500, 2000, 200, TRUE, FALSE, '2023-11-10', '2024-04-03 12:00:00', 6.50, 130, 35, 'profile_pic12.jpg');
+INSERT INTO INSTA VALUES (12,'user12', 'Ava Martinez', 'Coffee addict ☕', 900, 500, 50, FALSE, TRUE, '2024-01-05', '2024-04-02 16:00:00', 4.25, 75, 20, 'profile_pic13.jpg');
+INSERT INTO INSTA VALUES (13,'user13', 'Ethan Adams', 'Adventure seeker 🌍', 2200, 1500, 150, TRUE, FALSE, '2024-02-20', '2024-04-01 20:00:00', 7.00, 150, 30, 'profile_pic14.jpg');
+INSERT INTO INSTA VALUES (14,'user14', 'Mia Brown', 'Yoga enthusiast 🧘‍♀️', 1000, 600, 60, TRUE, FALSE, '2024-03-15', '2024-03-31 10:00:00', 4.50, 80, 25, 'profile_pic15.jpg');
+INSERT INTO INSTA VALUES (15,'user15', ' Brown', 'Yoga enthusiast 🧘‍♀️', 1000, 600, 60, TRUE, FALSE, '2024-03-15', '2024-03-31 10:00:00', 4.50, 80, 25, 'profile_pic15.jpg');
+
+SELECT * FROM INSTA;
 
 CREATE TABLE MIXER_GRINDER (
     ID INT,
@@ -281,7 +283,7 @@ INSERT INTO MIXER_GRINDER VALUES('Brand12', 'Model12', 800, 4, 1.8, TRUE, TRUE, 
 INSERT INTO MIXER_GRINDER VALUES('Brand13', 'Model13', 950, 5, 2.5, TRUE, TRUE, TRUE, TRUE, 36, 'Silver', '27x37x47 cm', 179.99, '{"features": ["High-capacity jar", "Safety lock mechanism"], "material": "ABS plastic"}');
 INSERT INTO MIXER_GRINDER VALUES('Brand14', 'Model14', 750, 4, 1.5, TRUE, TRUE, FALSE, TRUE, 24, 'Black', '21x31x41 cm', 119.99, '{"features": ["Multi-functional blades", "Easy-grip handles"], "material": "Aluminum"}');
 INSERT INTO MIXER_GRINDER VALUES('Brand15', 'Model15', 850, 5, 2.0, TRUE, TRUE, TRUE, TRUE, 36, 'White', '26x36x46 cm', 169.99, '{"features": ["Powerful motor", "BPA-free material"], "material": "Polycarbonate"}');
- SELECT * FROM MIXER_GRINDER
+ SELECT * FROM MIXER_GRINDER;
  
  CREATE TABLE WASHING_MACHINE (
     ID SERIAL PRIMARY KEY,
@@ -291,7 +293,7 @@ INSERT INTO MIXER_GRINDER VALUES('Brand15', 'Model15', 850, 5, 2.0, TRUE, TRUE, 
     load_type ENUM('Top Load', 'Front Load', 'Semi-Automatic'),
     energy_rating CHAR(1),
     rpm INT,
-    wash_programs TEXT[],
+    wash_programs TEXT,
     is_warranty_available BOOLEAN,
     warranty_period_months INT,
     color VARCHAR(50),
@@ -299,7 +301,7 @@ INSERT INTO MIXER_GRINDER VALUES('Brand15', 'Model15', 850, 5, 2.0, TRUE, TRUE, 
     price DECIMAL(10,2),
     additional_info VARCHAR (50)
 );
- SHOW TABLE ;
+ SHOW TABLES ;
  INSERT INTO WASHING_MACHINE VALUES ('Brand1', 'Model1', 7.5, 'Top Load', 'A', 1200, '{"Normal Wash", "Quick Wash"}', TRUE, 24, 'White', '60x70x80 cm', 499.99, 'AdditionalInfo1');
 INSERT INTO WASHING_MACHINE VALUES('Brand2', 'Model2', 8.0, 'Front Load', 'B', 1400, '{"Delicate Wash", "Heavy Wash"}', TRUE, 36, 'Silver', '65x75x85 cm', 699.99, 'AdditionalInfo2');
 INSERT INTO WASHING_MACHINE VALUES('Brand3', 'Model3', 6.5, 'Semi-Automatic', 'C', 1000, '{"Gentle Wash", "Spin Only"}', TRUE, 24, 'Blue', '55x65x75 cm', 399.99, 'AdditionalInfo3');
@@ -367,7 +369,7 @@ INSERT INTO ICE_CREAM VALUES(12, 'Raspberry Ripple', 'Brand12', 180, 8.0, 20.0, 
 INSERT INTO ICE_CREAM VALUES(13, 'Hazelnut', 'Brand13', 170, 7.5, 19.0, TRUE, TRUE, FALSE, TRUE, 6.49, '2024-12-31', 'Turkey', 'Milk, Sugar, Hazelnut paste', '{"container": "Jar", "size": "500ml"}', 'Creamy hazelnut flavor');
 INSERT INTO ICE_CREAM VALUES(14, 'Salted Caramel', 'Brand14', 200, 9.0, 22.0, FALSE, TRUE, FALSE, TRUE, 7.29, '2024-12-31', 'USA', 'Milk, Sugar, Caramel, Sea salt', '{"container": "Box", "size": "2L"}', 'Sweet and salty combination');
 INSERT INTO ICE_CREAM VALUES(15, 'Coconut', 'Brand15', 160, 7.0, 18.0, TRUE, TRUE, TRUE, TRUE, 5.99, '2024-12-31', 'Philippines', 'Coconut milk, Sugar', '{"container": "Tube", "size": "1L"}', 'Creamy tropical flavor');
-SELECT * FROM ICE_CREAM
+SELECT * FROM ICE_CREAM;
 
 CREATE TABLE MICRO_OVEN (
     ID INT,
@@ -383,9 +385,9 @@ CREATE TABLE MICRO_OVEN (
     price INT,
     warranty_period_years INT,
     dimensions VARCHAR(50),
-    features TEXT[],
+    features TEXT,
     additional_info VARCHAR(50)
-)
+);
 
 INSERT INTO MICRO_OVEN VALUES (1, 'Brand1', 'Model1', 20.0, 1200, 'Black', FALSE, TRUE, TRUE, TRUE, 199.99, 2, '40x30x30 cm', '{"Defrost", "Timer", "Rotisserie"}', 'Compact size');
 INSERT INTO MICRO_OVEN VALUES(2, 'Brand2', 'Model2', 25.0, 1500, 'White', TRUE, FALSE, TRUE, TRUE, 249.99, 3, '45x35x35 cm', '{"Grill", "Child lock", "Quick Heat"}', 'Sleek design');
@@ -402,7 +404,7 @@ INSERT INTO MICRO_OVEN VALUES(12, 'Brand12', 'Model12', 34.0, 1700, 'Black', TRU
 INSERT INTO MICRO_OVEN VALUES(13, 'Brand13', 'Model13', 42.0, 2000, 'Silver', FALSE, TRUE, TRUE, FALSE, 349.99, 3, '60x50x50 cm', '{"Quick Start", "Grill Rack", "Timer"}', 'Stylish design');
 INSERT INTO MICRO_OVEN VALUES(14, 'Brand14', 'Model14', 20.0, 1200, 'Red', TRUE, FALSE, TRUE, TRUE, 199.99, 2, '40x30x30 cm', '{"Auto Reheat", "Quick Defrost", "Easy Clean"}', 'Compact and functional');
 INSERT INTO MICRO_OVEN VALUES(15, 'Brand15', 'Model15', 28.0, 1500, 'White', FALSE, TRUE, FALSE, TRUE, 249.99, 3, '47x37x37 cm', '{"Convection", "Pizza Mode", "Defrost"}', 'Versatile and reliable');
-SELECT* FROM MICRO OVEN
+SELECT* FROM MICRO_OVEN;
 
 CREATE TABLE POWER_BANK (
     ID INT,
@@ -439,7 +441,7 @@ INSERT INTO POWER_BANK  VALUES(12, 'Brand12', 'Model12', 25000, 5.0, 2.5, 5.0, 2
 INSERT INTO POWER_BANK  VALUES(13, 'Brand13', 'Model13', 20000, 5.0, 2.2, 5.0, 2.1, TRUE, TRUE, FALSE, TRUE, 54.99, 12, '125x65x28 mm', 'Compact and lightweight');
 INSERT INTO POWER_BANK  VALUES(14, 'Brand14', 'Model14', 18000, 5.0, 2.3, 5.0, 2.0, TRUE, FALSE, TRUE, FALSE, 39.99, 18, '120x70x25 mm', 'Sleek and modern design');
 INSERT INTO POWER_BANK  VALUES(15, 'Brand15', 'Model15', 30000, 5.0, 2.7, 5.0, 2.6, TRUE, TRUE, TRUE, TRUE, 79.99, 24, '150x80x35 mm', 'Heavy-duty build for long-term use');
-SELECT *  FROM POWER_BANK
+SELECT *  FROM POWER_BANK;
 CREATE TABLE HARD_DISK (
     ID INT,
     brand VARCHAR(50),
@@ -473,7 +475,7 @@ INSERT INTO HARD_DISK VALUES(12, 'Brand12', 'Model12', 1000, 'SATA', 7200, '3.5"
 INSERT INTO HARD_DISK VALUES(13, 'Brand13', 'Model13', 2000, 'USB 3.0', NULL, '2.5"', 128, TRUE, TRUE, TRUE, 129.99, 36, '130x85x20 mm', 'Slim and portable design');
 INSERT INTO HARD_DISK VALUES(14, 'Brand14', 'Model14', 4000, 'USB 3.1', 5400, '2.5"', 256, TRUE, TRUE, TRUE, 179.99, 24, '140x90x25 mm', 'Fast data transfer rate');
 INSERT INTO HARD_DISK VALUES(15, 'Brand15', 'Model15', 6000, 'Thunderbolt 3', 7200, '3.5"', 512, TRUE, FALSE, TRUE, 299.99, 36, '200x150x30 mm', 'High-performance storage solution');
-SELECT * FROM HARD_DISK
+SELECT * FROM HARD_DISK;
 CREATE TABLE BLOODBANK (
     ID INT,
     donor_name VARCHAR(100),
@@ -507,6 +509,53 @@ INSERT INTO BLOODBANK VALUES (12, 'Mia Lopez', 26, 'AB+', '2024-04-11', '20:15:0
 INSERT INTO BLOODBANK VALUES (13, 'James Lee', 42, 'O-', '2024-04-10', '21:30:00', 410.25, 'Blood Collection Center', 7896321450, 'james.lee@example.com', TRUE, TRUE, 5.2, '2024-05-12', 'Healthy donor');
 INSERT INTO BLOODBANK VALUES (14, 'Isabella Gonzalez', 31, 'A-', '2024-04-10', '22:45:00', 560.75, 'Local Blood Bank', 9632581470, 'isabella.gonzalez@example.com', FALSE, TRUE, 4.6, '2024-05-13', 'Regular donor');
 INSERT INTO BLOODBANK VALUES (15, 'William Perez', 37, 'B+', '2024-04-09', '23:00:00', 490.50, 'City Blood Donation Center', 3216549870, 'william.perez@example.com', TRUE, TRUE, 4.7, '2024-05-14', 'First-time donor');
- SELECT* FROM BLOODBANK
+ SELECT* FROM BLOODBANK;
  
 SHOW TABLES;
+
+CREATE TABLE FACEBOOK (
+    user_id INT,
+    username VARCHAR(50),
+    full_name VARCHAR(100),
+    email VARCHAR(100),
+    phone_number VARCHAR(20),
+    bio TEXT,
+    website VARCHAR(100),
+    friends_count INT,
+    followers_count INT,
+    posts_count INT,
+    profile_pic_url VARCHAR(255),
+    is_verified BOOLEAN,
+    is_private BOOLEAN,
+    account_creation_date DATE,
+    last_post_date DATE
+);
+
+INSERT INTO FACEBOOK VALUES(1, 'user1', 'John Doe', 'john@example.com', '1234567890', 'Welcome to my FACEBOOK profile!', 'http://www.example.com', 1000, 500, 50, 'http://www.example.com/profile_pic.jpg', true, false, '2024-01-01', '2024-04-11');
+INSERT INTO FACEBOOK VALUES(2, 'user2', 'Jane Smith', 'jane@example.com', '0987654321', 'Follow me for updates!', 'http://www.example.com', 1500, 700, 100, 'http://www.example.com/profile_pic.jpg', false, true, '2023-12-15', '2024-04-10');
+INSERT INTO FACEBOOK VALUES(3, 'user3', 'Mark Zuckerberg', 'mark@example.com', '9876543210', 'Founder and CEO of Facebook', 'http://www.example.com', 2000, 1000, 200, 'http://www.example.com/profile_pic.jpg', true, false, '2020-01-01', '2024-04-09');
+INSERT INTO FACEBOOK VALUES(4, 'user4', 'Alice Johnson', 'alice@example.com', '1234509876', 'I love photography!', 'http://www.example.com', 800, 400, 80, 'http://www.example.com/profile_pic.jpg', false, false, '2023-05-20', '2024-04-08');
+INSERT INTO FACEBOOK VALUES(5, 'user5', 'Michael Brown', 'michael@example.com', '9876123450', 'Travel enthusiast', 'http://www.example.com', 1200, 800, 150, 'http://www.example.com/profile_pic.jpg', true, true, '2022-11-10', '2024-04-07');
+INSERT INTO FACEBOOK VALUES(6, 'user6', 'Emma Wilson', 'emma@example.com', '8765432109', 'Foodie | Blogger', 'http://www.example.com', 500, 200, 30, 'http://www.example.com/profile_pic.jpg', false, true, '2024-02-14', '2024-04-06');
+INSERT INTO FACEBOOK VALUES(7, 'user7', 'Matthew Garcia', 'matthew@example.com', '7654321098', 'Fitness enthusiast', 'http://www.example.com', 3000, 2500, 500, 'http://www.example.com/profile_pic.jpg', true, false, '2023-09-30', '2024-04-05');
+INSERT INTO FACEBOOK VALUES(8, 'user8', 'Olivia Martinez', 'olivia@example.com', '6543210987', 'Art lover | Traveler', 'http://www.example.com', 1800, 1200, 200, 'http://www.example.com/profile_pic.jpg', false, false, '2023-04-25', '2024-04-04');
+INSERT INTO FACEBOOK VALUES(9, 'user9', 'Daniel Taylor', 'daniel@example.com', '5432109876', 'Tech geek | Gamer', 'http://www.example.com', 2200, 1800, 300, 'http://www.example.com/profile_pic.jpg', true, true, '2023-01-15', '2024-04-03');
+INSERT INTO FACEBOOK VALUES(10, 'user10', 'Sophia Hernandez', 'sophia@example.com', '4321098765', 'Nature lover', 'http://www.example.com', 400, 100, 20, 'http://www.example.com/profile_pic.jpg', false, true, '2022-07-05', '2024-04-02');
+INSERT INTO FACEBOOK VALUES(11, 'user11', 'David Thompson', 'david@example.com', '3210987654', 'Musician | Songwriter', 'http://www.example.com', 600, 300, 40, 'http://www.example.com/profile_pic.jpg', true, false, '2023-08-20', '2024-04-01');
+INSERT INTO FACEBOOK VALUES(12, 'user12', 'Isabella Rodriguez', 'isabella@example.com', '2109876543', 'Bookworm | Bibliophile', 'http://www.example.com', 1400, 900, 120, 'http://www.example.com/profile_pic.jpg', false, false, '2022-12-10', '2024-03-31');
+INSERT INTO FACEBOOK VALUES(13, 'user13', 'James Wilson', 'james@example.com', '1098765432', 'Coffee addict', 'http://www.example.com', 700, 400, 60, 'http://www.example.com/profile_pic.jpg', true, true, '2023-11-05', '2024-03-30');
+INSERT INTO FACEBOOK VALUES(14, 'user14', 'Ava Brown', 'ava@example.com', '0987654321', 'Animal lover | Pet parent', 'http://www.example.com', 900, 600, 90, 'http://www.example.com/profile_pic.jpg', false, false, '2023-02-28', '2024-03-29');
+INSERT INTO FACEBOOK VALUES(15, 'user15', 'Ethan Martinez', 'ethan@example.com', '9876543210', 'Adventure seeker', 'http://www.example.com', 2600, 2000, 400, 'http://www.example.com/profile_pic.jpg', true, true, '2022-05-15', '2024-03-28');
+
+SELECT * FROM FACEBOOK;
+USE ASSIGNMENT_1;
+SET SQL_SAFE_UPDATES = 0;
+UPDATE BATZ SET name  = 'hrx' WHERE  ID = 7 ;
+UPDATE BATZ SET name  = 'REBOOK' WHERE  ID = 15 ;
+
+
+DELETE FROM BATZ WHERE ID = 4;
+DELETE FROM BATZ WHERE ID = 15;
+
+SELECT * FROM BATZ;
+DELETE FROM BATZ WHERE ID = 7;
