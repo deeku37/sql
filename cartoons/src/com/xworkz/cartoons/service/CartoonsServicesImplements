@@ -1,0 +1,15 @@
+package com.xworkz.cartoons.service;
+import com.xworkz.cartoons.dto.CartoonsDto;
+public class CartoonsServicesImplements implements CartoonsService {
+
+        @Override
+        public boolean validateAndSave(CartoonsDto cartoonsDto) {
+            if(cartoonsDto != null){
+                System.out.println("not null" );
+                return  true;
+            }
+            return false;
+        }
+    }
+
+}
